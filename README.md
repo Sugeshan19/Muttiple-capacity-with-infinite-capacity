@@ -29,6 +29,9 @@ Queuing are the most frequently encountered problems in everyday life. For examp
 
 ## Program
 ```
+multiple capacity
+
+
 import math
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time=float(input("Enter the mean  inter service time of Lathe Machine (in secs) :  "))
@@ -42,12 +45,12 @@ print("--------------------------------------------------------------")
 print("The mean arrival rate per second : %0.2f "%lam)
 print("The mean service rate per second : %0.2f "%mu)
 rho=lam/(c*mu)
-sum=(lam/mu)**c*(1/(1-rho))/math.factorial(c)
+sum=(lam/mu)*c(1/(1-rho))/math.factorial(c)
 for i in range(0,c):
     sum=sum+(lam/mu)**i/math.factorial(i)
 P0=1/sum
 if (rho<1):
-    Lq=(P0/math.factorial(c))*(1/c)*(lam/mu)**(c+1)/(1-rho)**2
+    Lq=(P0/math.factorial(c))(1/c)(lam/mu)(c+1)/(1-rho)**2
     Ls=Lq+lam/mu
     Ws=Ls/lam
     Wq=Lq/lam
@@ -64,7 +67,8 @@ print("--------------------------------------------------------------")
 
 ## Output :
 
-![278803080-ded89670-1aaa-4ec1-b5f2-4adab003e50b](https://github.com/user-attachments/assets/9b8a6652-0429-433a-b588-aaffd7b6e494)
+![443955297-f44b0d6f-315a-4401-a1d9-37e8a0a885d9](https://github.com/user-attachments/assets/5dbba1db-e06a-4740-912e-ddd409d9e1fe)
+
 
 ## Result : 
 Thus the average number of materials in the system and conveyor, waiting time of each material in the system and conveyor is found successfully.
